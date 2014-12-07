@@ -27,6 +27,7 @@ class Openconnect < Formula
   depends_on "openssl" if build.without? "gnutls"
   depends_on "gnutls" => :optional
   depends_on "oath-toolkit" => :optional
+  depends_on "stoken" => :optional
 
   resource "vpnc-script" do
     url "http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/a78b3ddfc56ab457104c88e94dca72d8738f4fad:/vpnc-script"
